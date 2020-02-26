@@ -67,6 +67,8 @@ CONSUMER_GROUP_ID | Group if assigned to a consumer that will be created for thi
 
 ### Create consumer with fixed group id 
 
+* Add logic to `io.confluent.ksql.planner.plan.KsqlStructuredDataOutputNode#getQueryId` to ignore `base` parameter
+
 TBD ???
 
 _How does your solution work? This should cover the main data and control flows that are changing._
@@ -77,6 +79,7 @@ _How does your solution work? This should cover the main data and control flows 
 * Create a stream with fixed group id, DROP the stream, create new one without group id, stream reads records from `latest` offset
 
 ## LOEs and Delivery Milestones
+
 
 TBD ???
 
